@@ -1,2 +1,12 @@
 <h1>Bills#show</h1>
-<p>Find me in app/views/bills/show.html.erb</p>
+
+<%= link_to 'Back to Billboards', bills_path %>
+<p><%= @bill.name %></p>
+<% if @songs.any? %>
+  <% @songs.each do |song| %>
+    <p><%= song.name %></p>
+     <%= link_to 'Remove', remove_bill_song_path(@bill, song), method: :delete %>
+  <% end %>
+<% end %>
+
+<%= link_to 'Add', new_bill_song_path(@bill) %>
