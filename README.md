@@ -1,24 +1,32 @@
-# README
+# Ruby Lunch Lady
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Assignment given as part of the DevPoint Labs Full Stack Web Development Course
 
-Things you may want to cover:
+#### Week 2
 
-* Ruby version
+Basic Objectives:
 
-* System dependencies
+-Create a new rails app with a git repo
 
-* Configuration
+-Billboard Model - top 100 us, top 100 euro, top 50, ect...
 
-* Database creation
+-Artist Model - has_many songs
 
-* Database initialization
+-Song Model - belongs_to artist, belongs_to billboard
 
-* How to run the test suite
+-All CRUD actions for each model
 
-* Services (job queues, cache servers, search engines, etc.)
+-This is going to use nested routes for easier use of controller data flow
 
-* Deployment instructions
 
-* ...
+Bonus Objectives:
+
+-Style it to make it look professional, use Bootstrap, Materialize, Foundation, Semantic UI, Etc...
+
+-Add any other models that you see fit to make it a more robust application
+
+-Have the ability to play/preview the songs
+
+-DRY up any code and do a full refactor of anything to make the code the cleanest you can
+
+-Ability to move song up or down a Billboard
